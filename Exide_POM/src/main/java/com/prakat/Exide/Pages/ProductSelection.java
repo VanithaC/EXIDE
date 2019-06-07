@@ -53,7 +53,8 @@ public class ProductSelection {
 	
 	/*----- Element Locators for Product Selection Agent Details Starts here--------*/
 	
-	
+	@FindBy(xpath="(//input[@placeholder='Enter Code'])[1]")
+	private WebElement AdvisorCode;
 	
 	
 	/*------- Element Locators for Product Selection Agent Details Ends here--------*/
