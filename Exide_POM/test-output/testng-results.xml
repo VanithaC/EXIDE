@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="40276" started-at="2019-06-07T06:04:48Z" finished-at="2019-06-07T06:05:29Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="40276" started-at="2019-06-07T06:04:48Z" finished-at="2019-06-07T06:05:29Z">
+      <class name="com.prakat.Exide.TestScripts.ClickOnAddNew">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.prakat.Exide.TestScripts.ClickOnAddNew@13deb50e]" name="setUpSuite" is-config="true" duration-ms="172" started-at="2019-06-07T06:04:48Z" finished-at="2019-06-07T06:04:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.prakat.Exide.TestScripts.ClickOnAddNew@13deb50e]" name="beforeTest" is-config="true" duration-ms="7947" started-at="2019-06-07T06:04:48Z" finished-at="2019-06-07T06:04:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="ClickAddNew()[pri:0, instance:com.prakat.Exide.TestScripts.ClickOnAddNew@13deb50e]" name="ClickAddNew" duration-ms="32291" started-at="2019-06-07T06:04:56Z" finished-at="2019-06-07T06:05:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickAddNew -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.prakat.Exide.TestScripts.ClickOnAddNew@13deb50e]" name="endReport" is-config="true" duration-ms="324" started-at="2019-06-07T06:05:29Z" finished-at="2019-06-07T06:05:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.prakat.Exide.TestScripts.ClickOnAddNew -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
