@@ -15,3 +15,6 @@
 2019-06-07 12:21:47,706 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Prakat-D-002\git\Exide_POM_Framework\Exide_POM\src\main\resources
 2019-06-07 12:21:47,708 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-06-07 12:21:47,709 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Prakat-D-002\git\Exide_POM_Framework\Exide_POM\src\test\resources
+2019-06-07 12:46:31,155 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-07 12:46:31,155 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Prakat-D-002\git\Exide_POM_Framework\Exide_POM\src\main\resources
+2019-06-07 12:46:31,157 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.

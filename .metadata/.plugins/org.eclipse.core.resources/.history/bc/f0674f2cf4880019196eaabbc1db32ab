@@ -55,9 +55,7 @@ public class ProductSelection {
 	
 	@FindBy(xpath="(//input[@placeholder='Enter Code'])[1]")
 	private WebElement AdvisorCode;
-	public WebElement getAdvisorCode() {
-		return AdvisorCode;
-	}
+	
 	
 	/*------- Element Locators for Product Selection Agent Details Ends here--------*/
 	
