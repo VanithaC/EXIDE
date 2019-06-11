@@ -1,0 +1,167 @@
+package com.prakat.Exide.Pages;
+
+	import org.openqa.selenium.WebDriver;
+	import org.openqa.selenium.WebElement;
+	import org.openqa.selenium.support.FindBy;
+	import org.openqa.selenium.support.PageFactory;
+
+	public class PlanDetails {
+
+@FindBy(xpath="//select[name='payment frequency']")
+private WebElement PaymentFrequencyDropdown;
+public WebElement getPaymentFrequencyDropdown()
+{
+return PaymentFrequencyDropdown;
+}
+
+//Element locator product details for proposal sign date day textfield
+
+@FindBy(xpath="//input[@name='day']")
+private WebElement daytfield;
+public WebElement getdaytfield()
+{
+return  daytfield;
+}
+
+//Element locator product details for proposal sign date month textfield
+
+@FindBy(xpath="//input[@name='month']")
+private WebElement monthtfield;
+public WebElement getmonthtfield()
+{
+return  monthtfield;
+}
+
+//Element locator product details for proposal sign date year textfield
+
+@FindBy(xpath="//input[@name='year']")
+private WebElement yeartfield;
+public WebElement getyeartfield()
+{
+return  yeartfield;
+}
+
+//Element locator product details for non medical/medical class dropdown
+
+@FindBy(xpath="//select[name='medical class']")
+private WebElement medicalclassDropdown;
+public WebElement medicalclassDropdown()
+{
+return medicalclassDropdown;
+}
+
+//Element locator product details for save and proceed button
+
+@FindBy(xpath="//button[@class='btn btn-primary']")
+private WebElement saveandproceedbtn;
+public WebElement getsaveandproceedbtn()
+{
+return saveandproceedbtn;
+}
+
+//Element locator product details for save and draft button
+
+@FindBy(xpath="//button[@class='btn btn-default']")
+private WebElement saveanddraftbtn;
+public WebElement getsaveanddraftbtn()
+{
+return saveanddraftbtn;
+
+
+}
+
+//Element locator product details for base cbox1
+
+@FindBy(xpath="//input[@type='checkbox' and @id='1']")
+private WebElement basecbox1;
+public WebElement getbaseCbox1()
+{
+return basecbox1;
+}
+
+//Element locator product details for base cbox2
+
+@FindBy(xpath="//input[@ype='checkbox' and @id='2']")
+private WebElement basecbox2;
+public WebElement getbasecbox2()
+{
+return basecbox2;
+}
+
+//Element locator product details for base cbox3
+
+@FindBy(xpath="//input[@type='checkbox' and @id='3']")
+private WebElement basecbox3;
+public WebElement getbasecbox3()
+{
+return basecbox3;
+}
+
+
+//Element locator customer type for individual billing radio button
+
+@FindBy(xpath="//label[@for='indBilling']")
+private WebElement individualbillingRadiobtn;
+public WebElement getindividualBillingRadiobtn()
+{
+return individualbillingRadiobtn;
+}
+
+//Element locator customer type for group billing radio button
+
+@FindBy(xpath="//label[@for='groupBilling']")
+private WebElement grouopbillingRadiobtn;
+public WebElement grouopbillingRadiobtn()
+{
+return grouopbillingRadiobtn;
+}
+
+
+//Element locator customer type for  none radio button
+
+@FindBy(xpath="//label[@for='noneBilling']")
+private WebElement noneBillingRadiobtn;
+public WebElement getnoneBillingRadiobtn()
+{
+return noneBillingRadiobtn;
+}
+
+
+//Element locator select the renewal payment mode for debit card radio button
+
+@FindBy(xpath="//label[@for='debitCard']")
+private WebElement DebitCardradiobtn;
+public WebElement getDebitCardradiobtn()
+{
+return DebitCardradiobtn;
+}
+
+
+
+//Element locator select the renewal payment mode for Confirm Bank account number text field
+
+@FindBy(xpath="//input[@name='debitconfirmtAccNo']")
+private WebElement debitconfirmAccNotfield;
+public WebElement getdebitconfirmAccNotfield()
+{
+return debitconfirmAccNotfield;
+}
+
+//Element locator select the renewal payment mode for Account type dropdown
+
+@FindBy(xpath="//select[@name='debitAccType']")
+private WebElement debitAccTypeDropdown;
+public WebElement getdebitAccTypeDropdown()
+{
+return debitAccTypeDropdown;
+}
+		
+		WebDriver driver;
+		
+		public PlanDetails(WebDriver driver) {
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+		}
+	}
+
+
