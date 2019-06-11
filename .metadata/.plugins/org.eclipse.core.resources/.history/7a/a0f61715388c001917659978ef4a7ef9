@@ -1,0 +1,129 @@
+package com.prakat.Exide.Pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class Questionnarie {
+	
+	//Elements Locator For Qustionnarie 51-54 For No Radio Botton
+	@FindBy(xpath="//Label[@class='radioLabel'][2]")
+	private WebElement noRadioBtn;
+	public WebElement getnoRadioBtn()
+	{
+	return noRadioBtn;
+	}
+
+	//Elements Locator For Qustionnarie 55 For No Radio Botton
+	@FindBy(xpath="//label[@for='minsuranceNo']")
+	private WebElement noradiobtn;
+	public WebElement getnoradiobtn()
+	{
+	return noRadioBtn;
+	}
+
+	//Elements Locator For Qustionnarie Save And Proceed Botton
+	@FindBy(xpath="//button[@class='btn btn-primary']")
+	private WebElement saveanproceed;
+	public WebElement getsaveanproceed()
+	{
+	return saveanproceed;
+	}	
+	
+	//Elements Locator For Any Disease Radio Botton
+	@FindBy(xpath="//label[@for='diseasNo']")
+	private WebElement diseasebtn;
+	public WebElement getdiseasebtn()
+	{
+	return diseasebtn;
+	}
+	
+	//Elements Locator For Height Text Field
+		@FindBy(xpath="//input[@placeholder='Enter height']")
+		private WebElement height;
+		public WebElement getheigh()
+		{
+		return height;
+		}
+
+		//Elements Locator For weight Text Field
+				@FindBy(xpath="//input[@placeholder='Enter weight']")
+				private WebElement weight;
+				public WebElement getweight()
+				{
+				return weight;
+				}
+				
+				//Elements Locator For Tobacco Radio Button 
+				@FindBy(xpath="//label[@for='tobbacoNo']")
+				private WebElement tobbaco;
+				public WebElement gettobbaco()
+				{
+				return tobbaco;
+				}
+				
+				//Elements Locator For smoking habit select option
+				@FindBy(xpath="//select[@class='ng-pristine ng-valid ng-touched']")
+				private WebElement smoking;
+				public WebElement getsmoking()
+				{
+				return smoking;
+				}
+				
+				//Elements Locator For alcohol drinking check box
+				@FindBy(xpath="//label[@for='noDrink']")
+				private WebElement drink;
+				public WebElement getdrink()
+				{
+				return drink;
+				}
+				
+				//Elements Locator For 64-83 radio button
+				@FindBy(xpath="//label[@for='sectionNo']")
+				private WebElement secno;
+				public WebElement getsecno()
+				{
+				return secno;
+				}
+				
+				//Elements Locator For vaccine radio button
+				@FindBy(xpath="//label[@for='vaccineYes']")
+				private WebElement vaccine;
+				public WebElement getvaccine()
+				{
+				return vaccine;
+				}
+				
+				//Elements Locator For political person radio button
+				@FindBy(xpath="//label[@for='legalNo']")
+				private WebElement political;
+				public WebElement getpolitical()
+				{
+				return political;
+				}
+				
+				//Elements Locator For Declaration for radio button
+				@FindBy(xpath="//label[@for='premiumLegal']")
+				private WebElement proposal;
+				public WebElement getproposal()
+				{
+				return proposal;
+				}
+				
+				//Elements Locator For health and life save as draft
+				@FindBy(xpath="(//button[@class='btn btn-default']) [2]")
+				private WebElement savedraft;
+				public WebElement getsavedraft()
+				{
+				return savedraft;
+				}
+				
+				
+				
+				
+				
+				
+				
+				
+				
+		
+}

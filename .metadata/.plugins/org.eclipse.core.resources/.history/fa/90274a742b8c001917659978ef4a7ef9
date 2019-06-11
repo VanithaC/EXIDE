@@ -1,0 +1,25 @@
+package com.prakat.Exide.Pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class Questionnarie {
+	
+	//Elements Locator For Qustionnarie 51-54 For Yes Radio Botton
+	
+	@FindBy(xpath="//Label[@for='eInsuranceYes']")
+	private WebElement yesradiobtn;
+	public WebElement getyesradiobtn()
+	{
+	return yesradiobtn;
+	}
+
+	//Elements Locator For Enter Number Text Box
+	@FindBy(Class='border-none ng-pristine ng-valid ng-touched')
+	private WebElement numbertextbox;
+	public WebElement getnumbertextbox()
+	{
+	return numbertextbox;
+	}
+
+}
