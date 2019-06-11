@@ -7,11 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.prakat.Generic.Helper.BaseTest;
 import com.prakat.Generic.Helper.ExcelHelper;
 
-
-public class LoginPage{
+public class LoginPage {
 	@FindBy(id = "username")
 	private WebElement userNameEdit;
 	@FindBy(id = "password")
@@ -19,14 +17,14 @@ public class LoginPage{
 
 	@FindBy(xpath = "//button[text()='Login']")
 	private WebElement loginButton;
-	
-/*	@FindBy(linkText="Skip for now")
-			
-	private WebElement skipForMobileLink;
-	
-	public WebElement getSkipForMobileLink() {
-		return skipForMobileLink;
-	}*/
+
+	/*
+	 * @FindBy(linkText="Skip for now")
+	 * 
+	 * private WebElement skipForMobileLink;
+	 * 
+	 * public WebElement getSkipForMobileLink() { return skipForMobileLink; }
+	 */
 
 	public WebElement getUserNameEdit() {
 		return userNameEdit;
@@ -41,23 +39,24 @@ public class LoginPage{
 	}
 
 	WebDriver driver;
-	 public  LoginPage(WebDriver driver) {
-		this.driver=driver;
+
+	public LoginPage(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
-	 public void login() throws IOException, Throwable {
-		 ExcelHelper  xlib=new ExcelHelper();
-	//Getting username from excel sheet
-	 String un=xlib.getExcelData("Exide", 0, 1); 
-	//Getting password from excel sheet
-	 String pw=xlib.getExcelData("Exide", 1, 1);
-	 userNameEdit.sendKeys(un);
-	 
-	 passwordEdit.sendKeys(pw);
-	 
-	 loginButton.click();
-	 
-	
- }  
+	public void login() throws IOException, Throwable {
+		ExcelHelper xlib = new ExcelHelper();
+		// Getting username from excel sheet
+		String un = xlib.getExcelData("Exide", 1, 0);
+		// Getting password from excel sheet
+		String pw = xlib.getExcelData("Exide", 1, 1);
+		userNameEdit.sendKeys(un);
+
+		passwordEdit.sendKeys(pw);
+
+		loginButton.click();
+
+	}
+
 }
