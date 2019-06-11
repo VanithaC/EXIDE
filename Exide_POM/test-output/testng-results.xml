@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42042" started-at="2019-06-11T05:27:28Z" finished-at="2019-06-11T05:28:10Z">
+  <suite name="Default suite" duration-ms="51762" started-at="2019-06-11T09:35:29Z" finished-at="2019-06-11T09:36:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42042" started-at="2019-06-11T05:27:28Z" finished-at="2019-06-11T05:28:10Z">
-      <class name="com.prakat.Exide.TestScripts.ClickOnAddNew">
-        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.prakat.Exide.TestScripts.ClickOnAddNew@3abbfa04]" name="setUpSuite" is-config="true" duration-ms="199" started-at="2019-06-11T05:27:28Z" finished-at="2019-06-11T05:27:28Z">
+    <test name="Default test" duration-ms="51762" started-at="2019-06-11T09:35:29Z" finished-at="2019-06-11T09:36:21Z">
+      <class name="com.prakat.Exide.TestScripts.ProposalForm">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.prakat.Exide.TestScripts.ProposalForm@3abbfa04]" name="setUpSuite" is-config="true" duration-ms="184" started-at="2019-06-11T09:35:29Z" finished-at="2019-06-11T09:35:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.prakat.Exide.TestScripts.ClickOnAddNew@3abbfa04]" name="beforeTest" is-config="true" duration-ms="14248" started-at="2019-06-11T05:27:28Z" finished-at="2019-06-11T05:27:42Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.prakat.Exide.TestScripts.ProposalForm@3abbfa04]" name="beforeTest" is-config="true" duration-ms="24165" started-at="2019-06-11T09:35:29Z" finished-at="2019-06-11T09:35:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="ClickAddNew(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.prakat.Exide.TestScripts.ClickOnAddNew@3abbfa04]" name="ClickAddNew" duration-ms="26805" started-at="2019-06-11T05:27:43Z" data-provider="getLoginData" finished-at="2019-06-11T05:28:10Z">
+        <test-method status="FAIL" signature="ClickAddNew(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.prakat.Exide.TestScripts.ProposalForm@3abbfa04]" name="ClickAddNew" duration-ms="26670" started-at="2019-06-11T09:35:54Z" data-provider="getLoginData" finished-at="2019-06-11T09:36:21Z">
           <params>
             <param index="0">
               <value>
@@ -37,20 +37,55 @@
                 <![CDATA[1.111111111111E12]]>
               </value>
             </param>
+            <param index="4">
+              <value>
+                <![CDATA[Self]]>
+              </value>
+            </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[expected [] but found [Select Insurance Repository]]]>
+              <![CDATA[element click intercepted: Element <button _ngcontent-c17="" class="btn btn-primary" disabled="">...</button> is not clickable at point (1113, 595). Other element would receive the click: <div _ngcontent-c1="" aria-labelledby="successModalLabel" class="modal fade successModal show" id="successModal" role="dialog" tabindex="-1">...</div>
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'PRAKAT-D-002', ip: '192.168.1.156', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\PRAKAT~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56086}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}
+Session ID: 33f0690cde966220fe58929caf3dfcdd]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [] but found [Select Insurance Repository]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at com.prakat.Exide.TestScripts.ClickOnAddNew.ClickAddNew(ClickOnAddNew.java:96)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-c17="" class="btn btn-primary" disabled="">...</button> is not clickable at point (1113, 595). Other element would receive the click: <div _ngcontent-c1="" aria-labelledby="successModalLabel" class="modal fade successModal show" id="successModal" role="dialog" tabindex="-1">...</div>
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'PRAKAT-D-002', ip: '192.168.1.156', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\PRAKAT~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56086}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}
+Session ID: 33f0690cde966220fe58929caf3dfcdd
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy12.click(Unknown Source)
+at com.prakat.Exide.TestScripts.ProposalForm.ClickAddNew(ProposalForm.java:90)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -78,15 +113,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClickAddNew -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.prakat.Exide.TestScripts.ClickOnAddNew@3abbfa04]" name="endReport" is-config="true" duration-ms="282" started-at="2019-06-11T05:28:10Z" finished-at="2019-06-11T05:28:10Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.prakat.Exide.TestScripts.ProposalForm@3abbfa04]" name="endReport" is-config="true" duration-ms="299" started-at="2019-06-11T09:36:21Z" finished-at="2019-06-11T09:36:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- com.prakat.Exide.TestScripts.ClickOnAddNew -->
+      </class> <!-- com.prakat.Exide.TestScripts.ProposalForm -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

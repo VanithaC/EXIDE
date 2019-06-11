@@ -16,6 +16,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.prakat.Exide.Pages.CustomerPersonalDetails;
 import com.prakat.Exide.Pages.HomePage;
 import com.prakat.Exide.Pages.LoggedInHomePage;
 import com.prakat.Exide.Pages.LoginPage;
@@ -32,6 +33,7 @@ public class BaseTest {
 	public ProductSelection prodSel;
 	public DropdownHelper drop;
 	public ExcelDataProvider excel;
+	public CustomerPersonalDetails cust;
 	
 	public static ExtentReports report;
 	public static ExtentTest logger;	
