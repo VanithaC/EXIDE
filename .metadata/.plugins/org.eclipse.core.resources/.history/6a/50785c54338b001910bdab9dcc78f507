@@ -1,0 +1,27 @@
+package com.prakat.Generic.Helper;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+
+public class ExcelDataProvider {
+	static Workbook book;
+	static Sheet sheet;
+	static String filePath = ConstantHelper.FilePath;
+
+	public static void getTestData(String sheetName){
+	FileInputStream file=null;
+	try
+	{
+	file= new FileInputStream(filePath);
+	}
+	Catch(FileNotFoundException e){
+		e.printStackTrace();
+	}
+	}
+	
+	}
+
+}

@@ -6,7 +6,7 @@
       <class name="com.prakat.Exide.TestScripts.ClickOnAddNew">
         <methods>
           <include name="setUpSuite"/>
-          <include name="ClickAddNew"/>
+          <include name="ClickAddNew" invocation-numbers="0"/>
           <include name="beforeTest"/>
           <include name="endReport"/>
         </methods>

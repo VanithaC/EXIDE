@@ -1,0 +1,86 @@
+package com.prakat.Exide.Pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class ProductSelection {
+	
+	
+	/*---------- Element Locators for Product Selection Plan Starts here------------*/
+	
+	// Element locator for Single Product Radio button selection
+	@FindBy(xpath="//label[@for='singleProduct']")
+	private WebElement SingleProductRadio;
+	
+	public WebElement getSingleProduct() {
+		return SingleProductRadio;
+	}
+	
+	// Element locator for Combo Solution Radio button selection
+	@FindBy(xpath="//label[@for='comboSolution']")
+	private WebElement ComboSolutionRadio;
+	
+	public WebElement getComboSolution() {
+		return ComboSolutionRadio;
+	}
+	
+	// Element locator for Select Product Search text box
+	@FindBy(name="Product")
+	private WebElement SelectProductSearch;
+	
+	public WebElement getSelectProductSearch() {
+		return SelectProductSearch;
+	}
+	
+	// Element locator for Proposal Form Number text box
+	@FindBy(id="ProposalNo1")
+	private WebElement ProposalFormNo;
+	
+	public WebElement getProposalFormNo() {
+		return ProposalFormNo;
+	}
+	
+	@FindBy(xpath="(//button[text()=' Save and Proceed '])[1]")
+	private WebElement PlanSaveProceedBtn;
+	
+	public WebElement getPlanSaveProceedBtn() {
+		return PlanSaveProceedBtn;
+	}
+	
+	/*---------- Element Locators for Product Selection Plan Ends here--------------*/
+	
+	/*----- Element Locators for Product Selection Agent Details Starts here--------*/
+	
+	@FindBy(id="advisorCode")
+	private WebElement AdvisorCode;
+	public WebElement getAdvisorCode() {
+		return AdvisorCode;
+	}
+	
+	
+	@FindBy(xpath="(//button[text()=' Save and Proceed '])[2]")
+	private WebElement AgentSaveProceed;
+	public WebElement getAgentSaveProceed(){
+		return AgentSaveProceed;
+	}
+			
+			
+	@FindBy(xpath = "(//button[text()=' Save as draft '])[1]")
+	private WebElement AgentSaveAsDraft;
+	public WebElement getAgentSaveAsDraft() {
+		return AgentSaveAsDraft;
+	}
+	/*------- Element Locators for Product Selection Agent Details Ends here--------*/
+	
+	
+	WebDriver driver;
+	
+	public ProductSelection(WebDriver driver) {
+	this.driver=driver;
+	PageFactory.initElements(driver, this);
+	}
+	
+	
+}
